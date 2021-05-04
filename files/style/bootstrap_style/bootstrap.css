@@ -1,0 +1,57 @@
+/*media query*/
+@media (max-width: 850px){
+    :root{
+        --max:98%;
+        --acol:blue;
+    } 
+}
+@media tv
+{
+    :root{
+        --max:111%;
+        --acol:blue;
+    }  
+}
+@media screen and (min-width: 851px)
+{
+    :root{
+        --max:99%;
+        --acol:blue;
+    }  
+}
+/*Global styles*/
+html,head,body{
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: 'Helvetica';
+    width: var(--max);
+}
+p,h1,h2,h3,h4,h5,h6,h7,h8,span,
+div, span, applet, object, iframe,
+blockquote, pre,a, abbr, acronym, 
+address, big, cite, code,del, dfn, 
+em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, 
+var,b, u, i, center, dl, dt, dd, ol, ul, 
+li,fieldset, form, label, legend, table, caption, 
+tbody, tfoot, thead, tr, th, td{
+    color: black;
+}
+a{color:var(--acol)}
+a:clicked{
+    color:aqua;
+    text-decoration: underline;
+}
+a:active{
+    text-decoration: none;
+}
+a:hover{
+    color:coral;
+    text-decoration: underline;
+    font-style: italic;
+}
+/*table of content*/
+.table_of_content{background-color:grey;}
+.t_o_c_title{font-weight:bold;text-align:center;}
+.t_o_c_link{padding:2px;}
+.t_o_c_option{color:black;}
