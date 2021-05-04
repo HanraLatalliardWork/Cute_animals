@@ -16,9 +16,9 @@ headList.push(`        <meta name=\"google-site-verification\" content=\"${verif
 headList.push("        <meta http-equiv=\"pragma\" content=\"cache\" />");
 headList.push("        <meta http-equiv=\"Cache-control\" content=\"public\" />");
 headList.push(`        <link rel=\"stylesheet\" href=\"${home}/files/style/bootstrap_style/bootstrap.css\"/>`);
-//headList.push("        <script type=\"text/javascript\" src=\"http://hanra-projects.unaux.com/side_add_ons/js/links/sorter.js\"></script>");
-//<link rel="canonical" href="http://hanra-projects.unaux.com/Irina/sad_face" />
-//<link rel="stylesheet" href="css/stylesheet.css"/>
+headList.push(`        <script type=\"text/JavaScript\" src=\"${home}/files/actions/redirect.js\"></script>`);
+headList.push(`        <script type=\"text/JavaScript\" src=\"${home}/files/actions/header.js\"></script>`);
+headList.push(`        <script type=\"text/JavaScript\" src=\"${home}/files/actions/footer.js\"></script>`);
 //<script src="js/script.js"></script>
 
 function head(ID){
