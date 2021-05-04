@@ -53,5 +53,5 @@ a:hover{
 /*table of content*/
 .table_of_content{background-color:grey;}
 .t_o_c_title{font-weight:bold;text-align:center;}
-.t_o_c_link{padding:2px;}
+.t_o_c_link{padding:2px;text-decoration:none;}
 .t_o_c_option{color:black;}
