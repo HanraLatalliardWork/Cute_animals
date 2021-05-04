@@ -1,6 +1,8 @@
 var headList=[],
     home="https://hanralatalliardwork.github.io/Cute_animals/",
-    verification="";
+    verification="",
+    favicon_ie="files/img/icon/GFEQ2227.ico",//size 16x16 (for IE), format:.ico
+    favicon_all="files/img/icon/GFEQ2227.png";//size 32x32 (for all), format:.png
 
 //<title></title>
 headList.push("        <meta charset=\"UTF-8\"/>");
@@ -19,6 +21,8 @@ headList.push(`        <link rel=\"stylesheet\" href=\"${home}/files/style/boots
 headList.push(`        <script type=\"text/JavaScript\" src=\"${home}/files/actions/redirect.js\"></script>`);
 headList.push(`        <script type=\"text/JavaScript\" src=\"${home}/files/actions/header.js\"></script>`);
 headList.push(`        <script type=\"text/JavaScript\" src=\"${home}/files/actions/footer.js\"></script>`);
+headList.push(`        <link rel=\"icon\" type=\"image/png\" href=\"${favicon_all}\" />`);//all
+headList.push(`        <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"${favicon_ie}\" />`);//IE
 //<script src="js/script.js"></script>
 
 function head(ID){
