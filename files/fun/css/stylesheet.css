@@ -1,0 +1,11 @@
+#Sub_Title_col,
+#Sub_Title_rand,
+#Sub_Title_draw_rand,
+#Sub_Title_Set_Speed,
+#S_T_C,
+#S_T_A,
+#S_T_T,
+#S_T_T_C{display:none;color:transparent;}
+p, h1, h2, h3, h4, h5, h6, h7, h8, span, div, span, applet, object, iframe, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    color: transparent;
+}
