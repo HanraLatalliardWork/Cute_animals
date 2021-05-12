@@ -1,5 +1,5 @@
 var headList=[],
-    home="https://hanralatalliardwork.github.io/Cute_animals/",
+    home="https://hanralatalliardwork.github.io/Cute_animals",
     verification="odjoqpsdpoqjdpqjdojqpojodqjdspqjdpojdod",
     favicon_ie="files/img/icon/GFEQ2227.ico",//size 16x16 (for IE), format:.ico
     favicon_all="files/img/icon/GFEQ2227.png";//size 32x32 (for all), format:.png
