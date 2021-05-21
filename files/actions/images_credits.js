@@ -20,7 +20,9 @@ function putImagesLinks(lst,folder="",lstLink,IDTo,tip){
     //<a href="" class="link"><img class="" scr=""/></a>
     var output="",
     Alphabet=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"],
-    AlphabetInt=0;
+    AlphabetInt=0,
+    div ="";
+    div+=document.getElementById(IDTo);
     if (tip===1){Alphabet=0};
     if (tip===2){AlphabetInt=0};
     for (var i=0;i<lst.length;i++){
@@ -28,15 +30,18 @@ function putImagesLinks(lst,folder="",lstLink,IDTo,tip){
             //output+="<p>"+Alphabet+"<a href=\""+lstLink[i]+"\" class=\"link\"><img class=\"image_animals\" scr=\""+folder+lst[i]+"\"/></a></p><br>\n";//
             //output+=`<p>${Alphabet}<a href="${lstLink[i]}" class="link"><img scr="${folder}${lst[i]}"/></a></p><br>\n`;
             //output+=`<img scr="${folder}${lst[i]}"/>`;
-            output+="<p>"+Alphabet+"</p><a href=\""+lstLink[i]+"\" class=\"link\"><img scr=\""+folder+lst[i]+"\" class=\"image_animals\"/></a><br>\n";//
+            div+="<p>"+Alphabet+"</p><br><a href=\""+lstLink[i]+"\" class=\"link\"><img class=\"image_animals\" src=\"";//
             Alphabet++;
             console.log("Alphabet="+Alphabet);
-            console.log("<p>"+Alphabet+"<a href=\""+lstLink[i]+"\" class=\"link\"><img class=\"image_animals\" scr=\""+folder+lst[i]+"\"/></a></p><br>\n");
+            console.log("<p>"+Alphabet+"<a href=\""+lstLink[i]+"\" class=\"link\"><img class=\"image_animals\" src=\"");
         } else{
-            output+="<p>"+Alphabet[AlphabetInt]+"<a href=\""+lstLink[AlphabetInt]+"\" class=\"link\"><img class=\"image_animals\" scr=\""+folder+lst[i]+"\"/></a></p><br>\n";
+            div+="<p>"+Alphabet[AlphabetInt]+"<a href=\""+lstLink[AlphabetInt]+"\" class=\"link\"><img class=\"image_animals\" src=\"";
             AlphabetInt++;
         };
+        var img = document.createElement("img");
+        img.src = folder+lst[i];
+        div+=img.src+"\"/></a><br>";
     };
-    document.getElementById(IDTo).innerHTML=output;
-    console.log(output);
+    document.getElementById(IDTo).innerHTML=div;
+    console.log(div);
 }
