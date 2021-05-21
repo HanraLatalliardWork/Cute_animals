@@ -27,9 +27,6 @@ function putImagesLinks(lst,folder="",lstLink,IDTo,tip){
     if (tip===2){AlphabetInt=0};
     for (var i=0;i<lst.length;i++){
         if (tip==1){
-            //output+="<p>"+Alphabet+"<a href=\""+lstLink[i]+"\" class=\"link\"><img class=\"image_animals\" scr=\""+folder+lst[i]+"\"/></a></p><br>\n";//
-            //output+=`<p>${Alphabet}<a href="${lstLink[i]}" class="link"><img scr="${folder}${lst[i]}"/></a></p><br>\n`;
-            //output+=`<img scr="${folder}${lst[i]}"/>`;
             div+="<p>"+Alphabet+"</p><br><a href=\""+lstLink[i]+"\" class=\"link\"><img class=\"image_animals\" src=\"";//
             Alphabet++;
             console.log("Alphabet="+Alphabet);
